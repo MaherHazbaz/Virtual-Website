@@ -10,10 +10,10 @@ const Model = () => {
 
 const GLTFModel = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-900">
-      <div className="w-full max-w-4xl h-96 bg-gray-800 shadow-lg rounded-md">
+    <div className="flex items-center justify-center h-screen  bg-gradient-to-b from-gray-100 via-purple-200 to-blue-300">
+      <div className="w-full max-w-4xl h-96 bg-gradient-to-t from-orange-200 via-pink-300 to-blue-300  shadow-lg rounded-md">
         <Canvas className="w-full h-full">
-          <ambientLight intensity={1.5} />
+          <ambientLight intensity={1.3} />
           <pointLight position={[10, 10, 10]} />
           <Model />
           <OrbitControls enableZoom={true} />
