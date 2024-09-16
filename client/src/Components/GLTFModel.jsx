@@ -20,7 +20,7 @@ const GLTFModel = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-gray-100 via-purple-200 to-blue-300">
+    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-gray-100 via-purple-200 to-blue-300 absolute w-full">
       {/* 3D Canvas */}
       <Canvas className="w-full h-full">
         <ambientLight intensity={1.3} />
