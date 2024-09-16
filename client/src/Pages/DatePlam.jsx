@@ -91,7 +91,7 @@ const ZoomControl = ({ zoomIn }) => {
   useFrame(({ camera }) => {
     const targetPosition = zoomIn
       ? new Vector3(0, 2, 28)
-      : new Vector3(20,2, 18);
+      : new Vector3(20, 2, 18);
     camera.position.lerp(targetPosition, 0.02); // Smoothly interpolate to target position
     camera.lookAt(0, 2, 0); // Focus on the model
   });

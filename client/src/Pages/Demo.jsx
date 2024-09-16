@@ -1,13 +1,12 @@
-import React from 'react'
-import GLTFModel from '../Components/GLTFModel'
-
+import React from "react";
+import GLTFModel from "../Components/GLTFModel";
 
 const Demo = () => {
   return (
-   <>
-   <GLTFModel/>
-   </>
-  )
-}
+    <>
+      <GLTFModel />
+    </>
+  );
+};
 
-export default Demo
+export default Demo;

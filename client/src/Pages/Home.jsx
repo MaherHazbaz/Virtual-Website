@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Lottie from "lottie-react"
-import plant from "../Animation/plant.json"
+import Lottie from "lottie-react";
+import plant from "../Animation/plant.json";
 
 const Home = () => {
   return (
