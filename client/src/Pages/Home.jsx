@@ -6,18 +6,22 @@ import plant from "../Animation/plant.json";
 const Home = () => {
   return (
     <>
-      <div className="absolute w-96 ">
-        <Lottie animationData={plant} />
+      <div className="absolute top-0 right-0 w-full h-full z-0 opacity-50">
+        <Lottie animationData={plant} className="w-full h-full" />
       </div>
-      <div className="grid grid-flow-col sm:grid-cols-1 md:grid-cols-2 p-14 justify-items-center text-3xl font-thin">
+      <div className="relative z-10 grid grid-flow-col sm:grid-cols-1 md:grid-cols-2 p-14 justify-items-center text-3xl font-thin">
         <div>
           <Link to={"/demo"}>
-            <button className="">Chir Pine</button>
+            <button className="bg-transparent border-b-2 border-gray-400 hover:border-gray-600 transition-all duration-300">
+              Chir Pine
+            </button>
           </Link>
         </div>
         <div>
           <Link to={"/datepalm"}>
-            <button>DatePalm</button>
+            <button className="bg-transparent border-b-2 border-gray-400 hover:border-gray-600 transition-all duration-300">
+              DatePalm
+            </button>
           </Link>
         </div>
       </div>
