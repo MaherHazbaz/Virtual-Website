@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import plant from "../Animation/plant.json";
+import CustomInput from "../Components/SearchBar";
+import SearchBar from "../Components/SearchBar";
 
 const Home = () => {
   return (
@@ -9,7 +11,10 @@ const Home = () => {
       <div className="absolute top-0 right-0 w-full h-full z-0 opacity-50">
         <Lottie animationData={plant} className="w-full h-full" />
       </div>
-      <div className="relative z-10 grid grid-flow-col sm:grid-cols-1 md:grid-cols-2 p-14 justify-items-center text-3xl font-thin">
+      <div className=" justify-end w-full py-4 px-36">
+        <SearchBar/>
+      </div>
+      <div className="relative z-10 grid grid-flow-col sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  p-14 justify-items-center text-3xl font-thin">
         <div>
           <Link to={"/demo"}>
             <button className="bg-transparent border-b-2 border-gray-400 hover:border-gray-600 transition-all duration-300">
@@ -21,6 +26,13 @@ const Home = () => {
           <Link to={"/datepalm"}>
             <button className="bg-transparent border-b-2 border-gray-400 hover:border-gray-600 transition-all duration-300">
               DatePalm
+            </button>
+          </Link>
+        </div>
+        <div>
+          <Link to={"/ferngrass"}>
+            <button className="bg-transparent border-b-2 border-gray-400 hover:border-gray-600 transition-all duration-300">
+              FernGrass
             </button>
           </Link>
         </div>

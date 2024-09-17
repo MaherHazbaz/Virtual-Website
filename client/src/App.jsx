@@ -4,6 +4,7 @@ import Home from "./Pages/Home";
 import { Route, Routes } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import DatePlam from "./Pages/DatePlam";
+import FernGrass from "./Pages/FernGrass";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/demo" element={<Demo />} />
         <Route path="/datepalm" element={<DatePlam />} />
+        <Route path="/ferngrass" element={<FernGrass/>}/>
       </Routes>
     </>
   );

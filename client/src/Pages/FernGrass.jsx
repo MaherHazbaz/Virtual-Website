@@ -5,8 +5,8 @@ import { Vector3 } from "three";
 
 // 3D Model Component
 const Model = () => {
-  const { scene } = useGLTF("/models/date_palm/datepalm.gltf");
-  return <primitive object={scene} scale={5} position={[0, -17, -1]} />;
+  const { scene } = useGLTF("/models/fern_grass_01/ferngrass.gltf");
+  return <primitive object={scene} scale={3} position={[0, -10, -15]} />;
 };
 
 // GLTFModel Component
@@ -20,13 +20,11 @@ const GLTFModel = () => {
   };
 
   return (
-    <div
-      className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-[#4D704D] to-[#8A7A58] 
- absolute w-full"
-    >
+    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-[#C7E8C2] to-[#9BC88B] /* Soft Green Gradient */
+ absolute w-full">
       {/* 3D Canvas */}
       <Canvas className="w-full h-full">
-        <ambientLight intensity={1.3} />
+        <ambientLight intensity={3} />
         <pointLight position={[10, 10, 10]} />
         <Model />
         <OrbitControls
@@ -46,32 +44,34 @@ const GLTFModel = () => {
               }`}
             >
               <h2 className="text-xl font-bold text-black">
-                Date Palm ( Phoenix Dactylifera)
+                Maidenhair fern( Adiantum capillus-veneris Linn)
               </h2>
               <p className="mt-2 text-gray-600">
-                Phoenix dactylifera, commonly known as the date palm, is a
-                flowering-plant species in the palm family, Arecaceae,
-                cultivated for its edible sweet fruit called dates. The species
-                is widely cultivated across northern Africa, the Middle East,
-                the Horn of Africa, Australia, South Asia, and California. It is
-                naturalized in many tropical and subtropical regions worldwide.
-                P.dactylifera is the type species of genus Phoenix, which
-                contains 12–19 species of wild date palms.
+                Adiantum capillus-veneris Linn (Maidenhair fern) is an herb
+                belonging to the family Pteridaceae. It is named as
+                “Pare-siavashan” in medical and pharmaceutical textbooks of
+                Iranian Traditional Medicine. The fronds of Maidenhair fern were
+                mainly administrated by ancient physicians as single medicine or
+                in combination with other plants in multi-herbal formulations
+                for curing different diseases. Because of different chemical
+                compositions, the herb fronds were also assessed for its
+                numerous pharmacological effects.
                 <br />
                 <br />
-                Antioxidants are chemicals/materials that interact and
-                deactivate the free radicals, therefore preventing them from
-                causing harm. The prevention of actions of free radical is
-                important step in the management of disease. Medicinal plants
-                and their constituents play a vital and significant action to
-                neutralize or inhibit the free radical by the use of antioxidant
-                activity. Experimental studies support the role of reactive
-                oxygen species in cancer and dietary antioxidants as well as
-                endogenous antioxidants shows a vital role as cancer preventive
-                agents via neutralization of reactive oxygen species. Another
-                study also showed that plant phenolic compounds including
-                flavonoids are effective antioxidants with reported
-                anti-mutagenic and anti-carcinogenic effects.
+                [Central nervous system] <br />
+                (Anti Alzheimer, Brain tonic) [Liquorice, Sweet Violet, Damask
+                Rose, Lavender, Peony, Borage, Fennel, Celery, Marshmallow,
+                Stavesacre, Assyrian Plum, Honey] Form of Medication (Syrup){" "}
+                <br />
+                <br />
+                [Treatment of Epilepsy Mania and Headache ]<br />
+                (Lavender, Liquorice, Borage, Fennel, Celery, Damask Rose,
+                Stavesacre, Assyrian Plum )Form Of Medication (Syrup) <br />
+                Dentistry Dental analgesic 1. Liquorice, Borage flower 2.
+                Lavender, Fumitory, Jujube, Black Nightshade aromatic water 1.
+                Oral decoction, Mouthwash 2. Oral, decoction (19) Dental tonic
+                Frankincense, Long Aristolochi, Sweet Violet, Sandalwood Dental
+                Powder .
               </p>
             </div>
           </Html>
