@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lavender model
+* source:	https://sketchfab.com/3d-models/lavender-model-99251e71291548f9ba5a76b909db776e
+* author:	chocolatemoth (https://sketchfab.com/chocolatemoth)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lavender model" (https://sketchfab.com/3d-models/lavender-model-99251e71291548f9ba5a76b909db776e) by chocolatemoth (https://sketchfab.com/chocolatemoth) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

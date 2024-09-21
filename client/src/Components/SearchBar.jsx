@@ -1,81 +1,87 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // For navigation
+import { IoSearchOutline } from "react-icons/io5";
 
 const SearchBar = () => {
+  const [data] = useState([
+    "Rosemary",
+    "Basil",
+    "Mint",
+    "Thyme",
+    "Lavender",
+    "Sage",
+    "Oregano",
+    "Tulsi",
+    "ChirPine",
+    "DatePalm",
+    "FernGrass",
+    "demo",
+    "Neem",
+    "Lupine",
+    "Echinacea",
+    "Dandelion",
+  ]);
+
+  const [searchQuery, setSearchQuery] = useState("");
+  const [filteredData, setFilteredData] = useState([]);
+
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleSearchChange = (e) => {
+    const query = e.target.value;
+    setSearchQuery(query);
+    setFilteredData(
+      data.filter((item) => item.toLowerCase().includes(query.toLowerCase()))
+    );
+  };
+
+  const handleResultClick = (item) => {
+    setSearchQuery(item);
+    setFilteredData([]);
+    const itemPath = item.toLowerCase().replace(/\s+/g, ""); // To match route paths like "datepalm", "chirpine"
+    navigate(`/${itemPath}`); // Redirect to the relevant page
+  };
+
   return (
-    <>
-      <form className="flex items-center max-w-lg mx-auto bg-transparent p-4  shadow-sm backdrop-blur-sm font-thin ">
+    <div className="relative w-full max-w-lg mx-auto">
+      {/* Search form */}
+      <form>
         <label htmlFor="voice-search" className="sr-only">
           Search
         </label>
         <div className="relative w-full">
-          <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-            <svg
-              className="w-5 h-5 text-gray-500 dark:text-gray-400"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 21 21"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M11.15 5.6h.01m3.337 1.913h.01m-6.979 0h.01M5.541 11h.01M15 15h2.706a1.957 1.957 0 0 0 1.883-1.325A9 9 0 1 0 2.043 11.89 9.1 9.1 0 0 0 7.2 19.1a8.62 8.62 0 0 0 3.769.9A2.013 2.013 0 0 0 13 18v-.857A2.034 2.034 0 0 1 15 15Z"
-              />
-            </svg>
+          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+            <IoSearchOutline className="text-gray-400 w-5 h-5" />
           </div>
           <input
             type="text"
             id="voice-search"
-            className="bg-transparent border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Search For Herbs & plants"
+            className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full pl-10 p-2.5 h-12 shadow-md focus:border-pink-100 focus:ring-pink-100 focus:outline-none dark:bg-transparent dark:text-black"
+            placeholder="Search For Herbs & Plants"
             required
+            value={searchQuery}
+            onChange={handleSearchChange}
           />
-          <button
-            type="button"
-            className="absolute inset-y-0 end-0 flex items-center pe-3"
-          >
-            <svg
-              className="w-5 h-5 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 16 20"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M15 7v3a5.006 5.006 0 0 1-5 5H6a5.006 5.006 0 0 1-5-5V7m7 9v3m-3 0h6M7 1h2a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3Z"
-              />
-            </svg>
-          </button>
         </div>
-        <button
-          type="submit"
-          className="inline-flex items-center py-2.5 px-4 ms-2 text-sm font-medium text-gray-500 bg-transparent rounded-lg border border-gray-500 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue"
-        >
-          <svg
-            className="w-5 h-5 me-2"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 20 20"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-            />
-          </svg>
-          Search
-        </button>
       </form>
-    </>
+
+      {/* Dropdown with filtered results */}
+      {searchQuery && filteredData.length > 0 && (
+        <div className="relative left-0 w-full bg-white shadow-lg rounded-lg z-10 mt-2">
+          <ul className="list-none p-0 m-0 max-h-60 overflow-y-auto">
+            {filteredData.map((item, index) => (
+              <li
+                key={index}
+                className="text-gray-900 cursor-pointer hover:bg-gray-200 p-3 border-b border-gray-200 transition-all duration-200 ease-in-out"
+                onClick={() => handleResultClick(item)}
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
   );
 };
 

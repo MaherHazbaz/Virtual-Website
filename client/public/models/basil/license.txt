@@ -1,0 +1,11 @@
+Model Information:
+* title:	A8-basil Plant
+* source:	https://sketchfab.com/3d-models/a8-basil-plant-60215d693fa84156b97dd9ab698f899d
+* author:	sbruehle (https://sketchfab.com/sbruehle)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "A8-basil Plant" (https://sketchfab.com/3d-models/a8-basil-plant-60215d693fa84156b97dd9ab698f899d) by sbruehle (https://sketchfab.com/sbruehle) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

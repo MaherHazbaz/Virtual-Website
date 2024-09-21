@@ -10,7 +10,7 @@ const Model = () => {
 };
 
 // GLTFModel Component
-const GLTFModel = () => {
+const Datepalm = () => {
   const [zoomIn, setZoomIn] = useState(false); // State for zoom effect
   const [showDetails, setShowDetails] = useState(false); // State for showing details
 
@@ -20,7 +20,8 @@ const GLTFModel = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-[#C7E8C2] to-[#9BC88B] /* Soft Green Gradient */ absolute w-full">
+    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-[#C7E8C2] to-[#9BC88B]/* Soft Green Gradient */ absolute w-full">
+      {" "}
       {/* 3D Canvas */}
       <Canvas className="w-full h-full">
         <ambientLight intensity={1.3} />
@@ -42,39 +43,69 @@ const GLTFModel = () => {
                 showDetails ? "scale-100 opacity-100" : "scale-50 opacity-0"
               }`}
             >
-              <h2 className="text-xl font-bold text-black">
-                Date Palm ( Phoenix Dactylifera)
-              </h2>
-              <p className="mt-2 text-gray-600">
-                Phoenix dactylifera, commonly known as the date palm, is a
-                flowering-plant species in the palm family, Arecaceae,
-                cultivated for its edible sweet fruit called dates. The species
-                is widely cultivated across northern Africa, the Middle East,
-                the Horn of Africa, Australia, South Asia, and California. It is
-                naturalized in many tropical and subtropical regions worldwide.
-                P.dactylifera is the type species of genus Phoenix, which
-                contains 12–19 species of wild date palms.
-                <br />
-                <br />
-                Antioxidants are chemicals/materials that interact and
-                deactivate the free radicals, therefore preventing them from
-                causing harm. The prevention of actions of free radical is
-                important step in the management of disease. Medicinal plants
-                and their constituents play a vital and significant action to
-                neutralize or inhibit the free radical by the use of antioxidant
-                activity. Experimental studies support the role of reactive
-                oxygen species in cancer and dietary antioxidants as well as
-                endogenous antioxidants shows a vital role as cancer preventive
-                agents via neutralization of reactive oxygen species. Another
-                study also showed that plant phenolic compounds including
-                flavonoids are effective antioxidants with reported
-                anti-mutagenic and anti-carcinogenic effects.
-              </p>
+              <div className="mt-2 text-gray-600">
+                {" "}
+                <h2 className="text-xl font-bold text-black">
+                  {" "}
+                  Date Palm (Phoenix dactylifera){" "}
+                </h2>{" "}
+                <p className="mb-4">
+                  {" "}
+                  The date palm (Phoenix dactylifera) has been cultivated for
+                  thousands of years and is a staple food in many parts of the
+                  Middle East and North Africa. Known for its sweet, energy-rich
+                  fruit, the date palm provides not only essential nutrients but
+                  also potential health benefits. In addition to being a rich
+                  source of fiber, vitamins, and minerals, dates are recognized
+                  for their antioxidant properties and their role in promoting
+                  overall wellness, particularly in managing chronic conditions.{" "}
+                </p>{" "}
+                <div className="space-y-2">
+                  {" "}
+                  <p>
+                    {" "}
+                    <span className="font-semibold">Blood pressure:</span> Dates
+                    may help regulate blood pressure due to their potassium
+                    content.{" "}
+                  </p>{" "}
+                  <p>
+                    {" "}
+                    <span className="font-semibold">Satiety:</span> The high
+                    fiber content of dates may help enhance feelings of fullness
+                    and aid in weight management.{" "}
+                  </p>{" "}
+                  <p>
+                    {" "}
+                    <span className="font-semibold">Serum lipids:</span> Regular
+                    consumption of dates may help in maintaining healthy
+                    cholesterol levels.{" "}
+                  </p>{" "}
+                  <p>
+                    {" "}
+                    <span className="font-semibold">
+                      Hypercholesterolemia:
+                    </span>{" "}
+                    Dates may aid in preventing hypercholesterolemia through
+                    their fiber and antioxidant properties.{" "}
+                  </p>{" "}
+                  <p>
+                    {" "}
+                    <span className="font-semibold">Diabetes:</span> While dates
+                    are high in natural sugars, they have a low glycemic index,
+                    which may help in moderate blood sugar management.{" "}
+                  </p>{" "}
+                  <p>
+                    {" "}
+                    <span className="font-semibold">Hypertension:</span> The
+                    combination of potassium and low sodium content in dates may
+                    help prevent hypertension.{" "}
+                  </p>{" "}
+                </div>{" "}
+              </div>
             </div>
           </Html>
         )}
       </Canvas>
-
       {/* Button to trigger zoom and toggle details */}
       <button
         onClick={handleZoomAndDetails}
@@ -98,4 +129,4 @@ const ZoomControl = ({ zoomIn }) => {
   return null;
 };
 
-export default GLTFModel;
+export default Datepalm;

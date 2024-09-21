@@ -20,8 +20,7 @@ const GLTFModel = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-[#C7E8C2] to-[#9BC88B] /* Soft Green Gradient */
- absolute w-full">
+    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-[#C7E8C2] to-[#9BC88B]/* Soft Green Gradient */ absolute w-full">
       {/* 3D Canvas */}
       <Canvas className="w-full h-full">
         <ambientLight intensity={3} />
@@ -43,36 +42,67 @@ const GLTFModel = () => {
                 showDetails ? "scale-100 opacity-100" : "scale-50 opacity-0"
               }`}
             >
-              <h2 className="text-xl font-bold text-black">
-                Maidenhair fern( Adiantum capillus-veneris Linn)
-              </h2>
-              <p className="mt-2 text-gray-600">
-                Adiantum capillus-veneris Linn (Maidenhair fern) is an herb
-                belonging to the family Pteridaceae. It is named as
-                “Pare-siavashan” in medical and pharmaceutical textbooks of
-                Iranian Traditional Medicine. The fronds of Maidenhair fern were
-                mainly administrated by ancient physicians as single medicine or
-                in combination with other plants in multi-herbal formulations
-                for curing different diseases. Because of different chemical
-                compositions, the herb fronds were also assessed for its
-                numerous pharmacological effects.
-                <br />
-                <br />
-                [Central nervous system] <br />
-                (Anti Alzheimer, Brain tonic) [Liquorice, Sweet Violet, Damask
-                Rose, Lavender, Peony, Borage, Fennel, Celery, Marshmallow,
-                Stavesacre, Assyrian Plum, Honey] Form of Medication (Syrup){" "}
-                <br />
-                <br />
-                [Treatment of Epilepsy Mania and Headache ]<br />
-                (Lavender, Liquorice, Borage, Fennel, Celery, Damask Rose,
-                Stavesacre, Assyrian Plum )Form Of Medication (Syrup) <br />
-                Dentistry Dental analgesic 1. Liquorice, Borage flower 2.
-                Lavender, Fumitory, Jujube, Black Nightshade aromatic water 1.
-                Oral decoction, Mouthwash 2. Oral, decoction (19) Dental tonic
-                Frankincense, Long Aristolochi, Sweet Violet, Sandalwood Dental
-                Powder .
-              </p>
+              <div className="mt-2 text-gray-600">
+                {" "}
+                <h2 className="text-xl font-bold text-black">
+                  {" "}
+                  Ferngrass (Cymbopogon spp.){" "}
+                </h2>{" "}
+                <p className="mb-4">
+                  {" "}
+                  Ferngrass, often referred to as Cymbopogon, includes several
+                  species commonly known for their aromatic and medicinal
+                  properties. This genus of grass, including species like
+                  Cymbopogon citratus (lemongrass) and Cymbopogon nardus
+                  (citronella), is renowned for its essential oils and fresh,
+                  lemony scent. Used traditionally in various cultures,
+                  ferngrass is celebrated for its range of health benefits,
+                  including its antimicrobial, anti-inflammatory, and
+                  digestive-supporting properties.
+                </p>{" "}
+                <div className="space-y-2">
+                  {" "}
+                  <p>
+                    {" "}
+                    <span className="font-semibold">
+                      Digestive health:
+                    </span>{" "}
+                    Ferngrass may aid digestion and help relieve symptoms such
+                    as indigestion, bloating, and gas.{" "}
+                  </p>{" "}
+                  <p>
+                    {" "}
+                    <span className="font-semibold">
+                      Antimicrobial properties:
+                    </span>{" "}
+                    The essential oils in ferngrass have antimicrobial effects,
+                    which may help combat bacteria, fungi, and viruses.{" "}
+                  </p>{" "}
+                  <p>
+                    {" "}
+                    <span className="font-semibold">
+                      Anti-inflammatory effects:
+                    </span>{" "}
+                    Ferngrass may reduce inflammation and provide relief from
+                    conditions like arthritis.{" "}
+                  </p>{" "}
+                  <p>
+                    {" "}
+                    <span className="font-semibold">Stress relief:</span>{" "}
+                    Ferngrass may have calming effects that help reduce stress
+                    and anxiety.{" "}
+                  </p>{" "}
+                  <p>
+                    {" "}
+                    <span className="font-semibold">Skin health:</span>{" "}
+                    Ferngrass oil can be used topically to treat skin issues,
+                    including acne and minor irritations, due to its antiseptic
+                    properties.{" "}
+                  </p>{" "}
+                   
+                </div>
+                 
+              </div>
             </div>
           </Html>
         )}

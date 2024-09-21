@@ -1,0 +1,11 @@
+Model Information:
+* title:	Thyme in pot
+* source:	https://sketchfab.com/3d-models/thyme-in-pot-425ebb1bf98046169f7c24fd57266eb6
+* author:	Sim387 (https://sketchfab.com/350rdlc.sl)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Thyme in pot" (https://sketchfab.com/3d-models/thyme-in-pot-425ebb1bf98046169f7c24fd57266eb6) by Sim387 (https://sketchfab.com/350rdlc.sl) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
