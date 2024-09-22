@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
-import AnimeLoader from "./components/AnimeLoader";
+import AnimeLoader from "./Components/AnimeLoader";
 
 // Lazy load components
 const Home = lazy(() => import("./Pages/Home"));
