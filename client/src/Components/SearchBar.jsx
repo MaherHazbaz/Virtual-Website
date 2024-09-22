@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // For navigation
-import { IoSearchOutline } from "react-icons/io5";
+import { IoSearch } from 'react-icons/io5';
+
 
 const SearchBar = () => {
   const [data] = useState([
@@ -51,7 +52,7 @@ const SearchBar = () => {
         </label>
         <div className="relative w-full">
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-            <IoSearchOutline className="text-gray-400 w-5 h-5" />
+            <IoSearch className="text-gray-400 w-5 h-5" />
           </div>
           <input
             type="text"
