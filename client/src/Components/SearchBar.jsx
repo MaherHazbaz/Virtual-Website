@@ -21,6 +21,10 @@ const SearchBar = () => {
     "Lupine",
     "Echinacea",
     "Dandelion",
+    "Aloevera",
+    "Ginseng",
+    "Ginger",
+    "Garlic",
   ]);
 
   const [searchQuery, setSearchQuery] = useState("");

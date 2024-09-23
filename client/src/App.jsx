@@ -2,6 +2,8 @@ import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import AnimeLoader from "./Components/AnimeLoader";
 
+
+
 // Lazy load components
 const Home = lazy(() => import("./Pages/Home"));
 const DatePlam = lazy(() => import("./Pages/DatePlam"));
@@ -16,6 +18,9 @@ const Basil = lazy(() => import("./Pages/Basil"));
 const Thyme = lazy(() => import("./Pages/Thyme"));
 const Echinacea = lazy(() => import("./Pages/Echinacea"));
 const Dandelion = lazy(() => import("./Pages/Dandelion"));
+const Ginseng = lazy(() => import("./Pages/Ginseng"));
+const Ginger = lazy(() => import("./Pages/Ginger"));
+const Garlic = lazy(() => import("./Pages/Garlic"));
 
 const App = () => {
   return (
@@ -34,6 +39,9 @@ const App = () => {
         <Route path="/thyme" element={<Thyme />} />
         <Route path="/echinacea" element={<Echinacea />} />
         <Route path="/dandelion" element={<Dandelion />} />
+        <Route path="/ginseng" element={<Ginseng />} />
+        <Route path="/ginger" element={<Ginger />} />
+        <Route path="/garlic" element={<Garlic />} />
       </Routes>
     </Suspense>
   );

@@ -17,7 +17,9 @@ import thyme from "../Images/thyme.jpg";
 import lavender from "../Images/lavender.jpg";
 import echinacea from "../Images/Echinacea.jpg";
 import dandelion from "../Images/dandelion.jpg";
-
+import ginseng from "../Images/Ginseng.jpg"
+import garlic from "../Images/garlic.jpg"
+import ginger from "../Images/ginger.jpg"
 
 
 // Transparent Frame component with pretty styling
@@ -67,6 +69,9 @@ const Home = () => {
         <Frame imageUrl={lavender} link="/lavender" label="Lavender" />
         <Frame imageUrl={echinacea} link="/echinacea" label="Echinacea" />
         <Frame imageUrl={dandelion} link="/dandelion" label="Dandelion" />
+        <Frame imageUrl={ginseng} link="/ginseng" label="Ginseng" />
+        <Frame imageUrl={ginger} link="/ginger" label="Ginger" />
+        <Frame imageUrl={garlic} link="/garlic" label="Garlic" />
         
       </div>
     </>
