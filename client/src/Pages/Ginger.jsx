@@ -23,7 +23,7 @@ const GLTFModel = () => {
     <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-[#C7E8C2] to-[#9BC88B] absolute w-full">
       {/* 3D Canvas */}
       <Canvas className="w-full h-full">
-        <ambientLight intensity={1} />
+        <ambientLight intensity={6} />
         <pointLight position={[10, 1, 10]} />
         <Model />
         <OrbitControls

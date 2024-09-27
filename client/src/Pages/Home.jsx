@@ -20,6 +20,8 @@ import dandelion from "../Images/dandelion.jpg";
 import ginseng from "../Images/Ginseng.jpg"
 import garlic from "../Images/garlic.jpg"
 import ginger from "../Images/ginger.jpg"
+import Chatbot from "../Components/Chatbot";
+import CustomButton from "../Components/CustomButton";
 
 
 // Transparent Frame component with pretty styling
@@ -54,6 +56,8 @@ const Home = () => {
       <div className="relative z-10 flex justify-center w-full py-4 px-4 sm:px-10 md:px-20 lg:px-36">
         <SearchBar />
       </div>
+      
+  
 
       {/* Grid Layout for Frames */}
       <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-10 sm:p-14 justify-items-center text-2xl sm:text-3xl font-thin">
@@ -73,6 +77,12 @@ const Home = () => {
         <Frame imageUrl={ginger} link="/ginger" label="Ginger" />
         <Frame imageUrl={garlic} link="/garlic" label="Garlic" />
         
+      </div>
+      <div>
+        <Chatbot/>
+      </div>
+      <div>
+        <CustomButton/>
       </div>
     </>
   );

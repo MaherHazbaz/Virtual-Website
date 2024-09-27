@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // For navigation
-import { IoSearch } from 'react-icons/io5';
-
+import { IoSearch } from "react-icons/io5";
 
 const SearchBar = () => {
   const [data] = useState([
